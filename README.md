@@ -18,7 +18,7 @@ The application uses LuaJIT 2.1 and 5.2 compatibility, which needs to be install
 4. Make and install the program
         sudo make & make install
 
-###Install MAD
+### Install MAD
 
 1. Download MAD by cloning the git repository
     
@@ -28,7 +28,7 @@ The application uses LuaJIT 2.1 and 5.2 compatibility, which needs to be install
 
         make lpeg
 
-##APPENDIX A. HOW TO INSTALL MAD
+## HOW TO INSTALL MAD
 
     make linux [LUADIR=/path/to/luajit/include]
 
