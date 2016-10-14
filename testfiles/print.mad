@@ -1,0 +1,11 @@
+a = 1
+b = \x x+1
+c = \ a
+d = \ b(a)
+print("b(a)="..b(a))
+e = c+d
+print("a="..a.." c="..c().." d()="..d().." c+d="..e)
+a = 2
+--print("a="..a.." c="..c)
+a = 3
+--print("a="..a.." c="..c)
