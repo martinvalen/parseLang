@@ -97,7 +97,9 @@ M.grammar = [=[
     lambda      <- (s'\'sp {|(namenosp (s','sp namelist)?)?|}
                         ( (s'('sp {|explist|} s')') / {exp} )                       sp) -> lambda
 
-    jsStyleFun  <- ({|name|} s'=>'sp ( (s'('sp {|explist|} s')') / {exp} )          sp) -> jsStyleFun
+-- jsfun <- name '=>' exp
+
+    jsStyleFun  <- ({|name|} s'=>'sp {exp}                                          sp) -> jsStyleFun
 
 -- table definitions & access
 

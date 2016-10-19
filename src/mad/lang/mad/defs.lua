@@ -254,14 +254,8 @@ function defs.fundef_a ( params, body )
     return ret
 end
 
-function defs.jsStyleFun ( params, explist, exp )
-    --local ret = { ast_id = "fundef", line = defs._line, param = params, block = { ast_id = "block_stmt", line = defs._line, { ast_id = "ret_stmt", line = defs._line, exp } } }
-    local ret
-    if exp then
-        ret = { ast_id = "ret_stmt", line = defs._line, exp }
-    else
-        ret = { ast_id = "ret_stmt", line = defs._line, table.unpack(explist) }
-    end
+function defs.jsStyleFun ( params, exp )
+    local ret = { ast_id = "ret_stmt", line = defs._line, exp }
     return { ast_id = "fundef", line = defs._line, param = params, block = { ast_id = "block_stmt", line = defs._line, ret } }
 end
 
